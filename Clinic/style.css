@@ -108,6 +108,7 @@ nav {
     margin: 0 auto;
     gap: 20px;
     padding: 80px 20px;
+	align-items: start;
 }
 
 .Top1 h1{
@@ -119,7 +120,9 @@ nav {
 .Top1 p{
     color: black;
     font-size: 20px;
-    padding-left: 80px;
+}
+.Top1 img{
+	padding-right: 80px;
 }
 
 .Top2 {
@@ -128,7 +131,7 @@ nav {
     margin: 0 auto;
     max-width: 1280px;
     gap: 20px;
-    padding: 80px 20px;
+    padding: 80px 20px 20px 20px;
 }
 
 .Top2 h1{
@@ -139,7 +142,7 @@ nav {
 }
 
 .Top2 p{
-	width: 80%;
+	width: 100%;
     font-size: 20px;
     color: black;
 }
@@ -221,6 +224,9 @@ nav {
 	padding: 0px 0px 0px 40px;
 	background-color: rgba(95, 183, 167, 1);
 	border-radius: 16px;
+}
+.kucingGaming {
+	padding: 20px;
 }
 
 .text1 a{
@@ -338,12 +344,17 @@ footer a{
 		max-width: 100%;
     }
 
-    .Top1 h1,
-    .Top2 h1 {
-        font-size: 40px;
+    .Top1 h1 {
+		font-size: 64px;
+		max-width: 200px;
+		padding-left: 0px;
+	}
+
+	.Top2 h1{
+		font-size: 40px;
 		max-width: 100%;
 		padding-left: 0px;
-    }
+	}
 
 	.dokter img{
 		max-width: 100%;
@@ -384,6 +395,12 @@ footer a{
 		margin-left: 0px;
 		margin-right: 0px;
 		max-width: 100%;
+	}
+	#kucingGaming .text1{
+		display: flex;
+		flex-direction: column;
+		padding-left: 0;
+		gap: 10px;
 	}
 
     .catGamer img{

@@ -96,7 +96,7 @@ nav {
 /* cat */
 #daycare .container {
 	background-color: rgba(237, 248, 249, 1);
-	padding-bottom: 80px;
+	padding: 80px 20px 80px 20px;
 }
 
 .Top {
@@ -113,6 +113,7 @@ nav {
 	color: rgba(46, 80, 112, 1);
 	font-size: 64px;
 	font-weight: 900;
+	min-width: 307px;
 }
 
 .Top p {
@@ -129,7 +130,7 @@ nav {
 	align-items: center;
 	color: rgba(46, 80, 112, 1);
 	gap: 20px;
-	padding-bottom: 80px;
+	padding: 80px 0px 0px;
 }
 
 .cat1 h4 {
@@ -227,6 +228,7 @@ button img {
 	padding-top: 80px;
 	max-width: 1280px;
 	margin: 0 auto;
+	padding: 20px 20px 0px;
 }
 
 #grooming .paket {
@@ -385,7 +387,7 @@ footer a {
 	}
 
 	.Top h1 {
-		font-size: 36px;
+		font-size: 64px;
 	}
 
 	.Top p {

@@ -95,8 +95,7 @@ nav {
 /* hero */
 #hero {
 	background-color: rgba(237, 248, 249, 1);
-	padding-top: 150px;
-	padding-bottom: 20px;
+	padding: 150px 20px 20px 20px;
 }
 #hero .container {
 	display: flex;
@@ -143,6 +142,7 @@ nav {
 #card .card {
 	display: flex;
 	flex-direction: row;
+	width: 100%;
 	gap: 32px;
 }
 .cardcard {
@@ -400,14 +400,10 @@ footer a {
 		max-width: 100%;
 	}
 	#hero h1 {
-		font-size: 32px;
-		padding-left: 20px;
-		padding-right: 20px;
+		font-size: 40px;
 	}
 	#hero p {
 		font-size: 16px;
-		padding-left: 20px;
-		padding-right: 20px;
 	}
 
 	/* Card */

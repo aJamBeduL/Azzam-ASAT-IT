@@ -110,6 +110,7 @@ nav {
 	margin: 0 auto;
 	gap: 20px;
 	padding: 80px 20px;
+	align-items: start;
 }
 
 .Top h1 {
@@ -293,7 +294,7 @@ footer a {
     }
 
     .Top h1 {
-        font-size: 40px;
+        font-size: 64px;
     }
 
     .Top p {
