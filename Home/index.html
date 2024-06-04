@@ -16,13 +16,11 @@
 			<a href="/Home/">
 				<img src="images/Group.png" alt="" />
 			</a>
-			<!-- Hidden Menu -->
 			<ul class="navSide">
 				<li><a href="/About/">Tentang Kami</a></li>
 				<li><a href="/Clinic/">Klinik</a></li>
 				<li><a href="/Daycare and Grooming/">Daycare & Grooming</a></li>
 				<li><a href="/Adobe/">Adopsi</a></li>
-				<li><img src="images/Group (1).svg" alt="" /><a href="">0812-3456-78910</a></li>
 			</ul>
 			<!-- Hamburger Icon -->
 			<div class="menu-toggle">
@@ -31,12 +29,14 @@
 				<div class="bar"></div>
 			</div>
 		</nav>
+		<!-- Hidden Menu -->
 		<div class="menuBar">
 			<ul class="navSide">
 				<li><a href="/About/">Tentang Kami</a></li>
 				<li><a href="/Clinic/">Klinik</a></li>
 				<li><a href="/Daycare and Grooming/">Daycare & Grooming</a></li>
 				<li><a href="/Adobe/">Adopsi</a></li>
+				<li><img src="images/Group (1).svg" alt="" /><a href="https://api.whatsapp.com/send/?phone=0812345678910&text&type=phone_number&app_absent=0">0812-3456-78910</a></li>
 			</ul>
 		</div>
 
@@ -80,10 +80,7 @@
 						<img src="images/Rectangle 1 (2).png" alt="" />
 						<h3>Adopsi Kucing</h3>
 						<p>Bantu kami menemukan rumah baru yang penuh cinta untuk kucing-kucing yang membutuhkan. Lihat kucing-kucing yang siap diadopsi dan jadilah bagian dari cerita bahagia mereka.</p>
-						<a href="/Adobe/"
-							>
-							<button>Cari Kucing</button>
-						</a>
+						<button><a href="/Adobe/">Cari Kucing</a></button>
 					</div>
 				</div>
 			</div>
@@ -239,7 +236,7 @@
 			// tampilkan menubar pada layar kecil
 			document.addEventListener("DOMContentLoaded", function () {
 				const menuToggle = document.querySelector(".menu-toggle");
-				const navMenu = document.querySelector(".navSide");
+				const navMenu = document.querySelector(".menuBar .navSide");
 
 				// Toggle the menu when the hamburger icon is clicked
 				menuToggle.addEventListener("click", function () {
