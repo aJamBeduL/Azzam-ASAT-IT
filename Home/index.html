@@ -22,7 +22,7 @@
 				<li><a href="/Clinic/">Klinik</a></li>
 				<li><a href="/Daycare and Grooming/">Daycare & Grooming</a></li>
 				<li><a href="/Adobe/">Adopsi</a></li>
-				<li><img src="images/Group (1).svg" alt=""><a href="">0812-3456-78910</a></li>
+				<li><img src="images/Group (1).svg" alt="" /><a href="">0812-3456-78910</a></li>
 			</ul>
 			<!-- Hamburger Icon -->
 			<div class="menu-toggle">
@@ -39,7 +39,7 @@
 				<li><a href="/Adobe/">Adopsi</a></li>
 			</ul>
 		</div>
-		
+
 		<section id="hero">
 			<div class="container">
 				<div class="left">
@@ -80,9 +80,10 @@
 						<img src="images/Rectangle 1 (2).png" alt="" />
 						<h3>Adopsi Kucing</h3>
 						<p>Bantu kami menemukan rumah baru yang penuh cinta untuk kucing-kucing yang membutuhkan. Lihat kucing-kucing yang siap diadopsi dan jadilah bagian dari cerita bahagia mereka.</p>
-						<button>
-							<a href="/Adobe/">Cari Kucing</a>
-						</button>
+						<a href="/Adobe/"
+							>
+							<button>Cari Kucing</button>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -213,49 +214,47 @@
 		</footer>
 
 		<script>
-			document.querySelector('.menu-toggle').addEventListener('click', function() {
-    this.classList.toggle('change');
-    document.querySelector('.menu').classList.toggle('show');
-});
+			document.querySelector(".menu-toggle").addEventListener("click", function () {
+				this.classList.toggle("change");
+				document.querySelector(".menu").classList.toggle("show");
+			});
 
-// Sembunyikan menu ketika salah satu menu diklik
-document.querySelectorAll('.menu ul li a').forEach(item => {
-    item.addEventListener('click', () => {
-        document.querySelector('.menu').classList.remove('show');
-        document.querySelector('.menu-toggle').classList.remove('change');
-    });
-});
+			// Sembunyikan menu ketika salah satu menu diklik
+			document.querySelectorAll(".menu ul li a").forEach((item) => {
+				item.addEventListener("click", () => {
+					document.querySelector(".menu").classList.remove("show");
+					document.querySelector(".menu-toggle").classList.remove("change");
+				});
+			});
 
-// Tampilkan tombol hamburger pada layar kecil
-window.addEventListener('resize', function() {
-    if (window.innerWidth <= 768) {
-        document.querySelector('.menu-toggle').style.display = 'block';
-    } else {
-        document.querySelector('.menu-toggle').style.display = 'none';
-    }
-});
+			// Tampilkan tombol hamburger pada layar kecil
+			window.addEventListener("resize", function () {
+				if (window.innerWidth <= 768) {
+					document.querySelector(".menu-toggle").style.display = "block";
+				} else {
+					document.querySelector(".menu-toggle").style.display = "none";
+				}
+			});
 
-// tampilkan menubar pada layar kecil
-document.addEventListener("DOMContentLoaded", function() {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navMenu = document.querySelector('.navSide');
+			// tampilkan menubar pada layar kecil
+			document.addEventListener("DOMContentLoaded", function () {
+				const menuToggle = document.querySelector(".menu-toggle");
+				const navMenu = document.querySelector(".navSide");
 
-    // Toggle the menu when the hamburger icon is clicked
-    menuToggle.addEventListener('click', function() {
-        navMenu.classList.toggle('active');
-        menuToggle.classList.toggle('active');
-    });
+				// Toggle the menu when the hamburger icon is clicked
+				menuToggle.addEventListener("click", function () {
+					navMenu.classList.toggle("active");
+					menuToggle.classList.toggle("active");
+				});
 
-    // Close the menu when a menu item is clicked
-    navMenu.querySelectorAll('a').forEach(function(item) {
-        item.addEventListener('click', function() {
-            navMenu.classList.remove('active');
-            menuToggle.classList.remove('active');
-        });
-    });
-});
-
-
+				// Close the menu when a menu item is clicked
+				navMenu.querySelectorAll("a").forEach(function (item) {
+					item.addEventListener("click", function () {
+						navMenu.classList.remove("active");
+						menuToggle.classList.remove("active");
+					});
+				});
+			});
 		</script>
 	</body>
 </html>
