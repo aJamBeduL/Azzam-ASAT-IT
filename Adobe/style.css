@@ -1,0 +1,334 @@
+/* reset */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* body */
+body {
+	font-family: "Barlow", sans-serif;
+}
+
+a {
+	list-style-type: none;
+	text-decoration: none;
+}
+
+/* nav */
+nav {
+	box-shadow: 0px 6px 18px 0px rgba(0, 0, 0, 0.05);
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 40px;
+	border-radius: 100px;
+	z-index: 1000;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	left: 20px;
+	background-color: white;
+	background-image: url(images/Paw\ Pattern\ light.svg);
+}
+
+.navSide {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 32px;
+	list-style: none;
+}
+
+.navSide li {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.navSide a {
+	color: rgba(46, 81, 113, 1);
+	font-size: 18px;
+	font-weight: 600;   
+}
+
+/* hero */
+#hero {
+    background-color: rgba(237, 248, 249, 1);
+    padding: 80px 20px 48px 20px;
+}
+#hero .container{
+    display: flex;
+    flex-direction: row;
+    max-width: 1280px;
+    margin: 0 auto;
+    gap: 10px;
+    align-items: flex-end;
+    padding-bottom: 48px;
+}
+#hero .container h1{
+    font-size: 64px;
+    color: rgba(46, 80, 112, 1);
+    font-weight: 900;
+}
+#hero .container p{
+    padding-left: 80px;
+    font-size: 20px;
+}
+.detail {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.card {
+    padding: 32px 48px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.cardcard{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    width: fit-content;
+    padding: 12px;
+    border-radius: 24px;
+}
+.cardcard h2{
+    color: rgba(46, 80, 112, 1);
+    font-size: 40px;
+}
+.detail p{
+    color: rgba(46, 80, 112, 1);
+    font-size: 20px;
+}
+.cardcard button{
+    width: 100%;
+    background-color: rgba(149, 187, 111, 1);
+    border-radius: 200px;
+    border: none;
+    margin-top: auto;
+}
+.cardcard button a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    padding: 24px;
+    color: white;
+    font-size: 24px;
+}
+.cardcard button img{
+    max-width: 32px;
+}
+.card .detail{
+    max-width: 386px;
+}
+
+/* form */
+.formulir {
+    display: flex;
+    justify-content: center;
+    padding: 80px 40px;
+}
+.form {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(246, 201, 86, 1);
+    max-width: 1280px;
+    width: 100%;
+    border-radius: 16px;
+}
+.form .kiri{
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 540px;
+    height: 100%;
+}
+.form h4{
+    color: rgba(46, 80, 112, 1);
+    font-size: 32px;
+    font-weight: 400;
+}
+.form h6{
+    color: rgba(46, 80, 112, 1);
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 32px;
+}
+#form p {
+    color: rgba(46, 80, 112, 1);
+    font-size: 20px;
+    font-weight: 700;
+}
+#name {
+    padding: 12px;
+    gap: 10px;
+    border-radius: 6px;
+    border: none;
+    width: 100%;
+}
+#email{
+    padding: 12px;
+    gap: 10px;
+    border-radius: 6px;
+    border: none;
+    width: 100%;
+}
+textarea {
+    resize: none;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    gap: 10px;
+    padding-bottom: 70px;
+    height: 100%;
+    width: 100%;
+}
+::placeholder {
+    font-size: 18px;
+    font-weight: 400;
+}
+#submit {
+    background-color: rgba(46, 80, 112, 1);
+    border: none;
+    border-radius: 100px;
+    padding: 24px;
+    gap: 10px;
+    color: white;
+    font-size: 24px;
+}
+
+#form.hidden {
+    display: none;
+}
+
+.arigato {
+    text-align: center;
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.arigato.hidden {
+    display: none;
+}
+
+/* footer */
+footer {
+	background-image: url(images/paw-pattern\ dark.svg);
+	background-color: rgba(46, 80, 112, 1);
+	padding: 40px;
+}
+
+.footerAtas {
+	display: flex;
+	gap: 32px;
+	border-bottom: 1px solid rgba(198, 234, 227, 1);
+	padding-bottom: 40px;
+}
+
+.footerBawah p {
+	padding-bottom: 30px;
+}
+
+.footerBawah {
+	font-size: 14px;
+	color: white;
+	padding-top: 40px;
+}
+
+.mainLink {
+	display: flex;
+	flex-direction: column;
+	max-width: 206px;
+	max-height: 199px;
+	gap: 13px;
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	max-width: 257px;
+	max-height: 216px;
+	gap: 13px;
+}
+
+.follow {
+	display: flex;
+	flex-direction: column;
+	gap: 13px;
+}
+
+.sosmed {
+	display: flex;
+	gap: 13px;
+}
+
+footer h6 {
+	font-size: 18px;
+	color: rgba(198, 234, 227, 1);
+}
+
+footer a {
+	font-size: 20px;
+	color: white;
+}
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 600px) {
+    .navSide{
+        display: none;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardcard {
+        width: 100%;
+    }
+
+    #hero .container{
+        flex-direction: column;
+        text-align: start;
+    }
+
+    .footerAtas {
+        flex-direction: column;
+    }
+    .form {
+        flex-direction: column;
+        align-items: center;
+    }
+    .form img{
+        width: 100%;
+    }
+
+    #submit{
+        margin-top: 70px;
+    }
+}
+/* Media Query for screens smaller than 400px */
+@media only screen and (max-width: 400px) {
+    footer h6 {
+        font-size: 16px;
+    }
+
+    footer a {
+        font-size: 18px;
+    }
+
+    .footerBawah p {
+        font-size: 12px;
+    }
+}

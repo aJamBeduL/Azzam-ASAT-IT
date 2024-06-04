@@ -1,0 +1,362 @@
+/* reset */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* body */
+body {
+	font-family: "Barlow", sans-serif;
+}
+
+a {
+	list-style-type: none;
+	text-decoration: none;
+}
+
+/* nav */
+nav {
+	box-shadow: 0px 6px 18px 0px rgba(0, 0, 0, 0.05);
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 40px;
+	border-radius: 100px;
+	z-index: 1000;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	left: 20px;
+	background-color: white;
+	background-image: url(images/Paw\ Pattern\ light.svg);
+}
+
+.navSide {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 32px;
+	list-style: none;
+}
+
+.navSide li{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.navSide a{
+	color: rgba(46, 81, 113, 1);
+	font-size: 18px;
+	font-weight: 600;
+}
+
+/* klinik */
+#klinik {
+    display: flex;
+    flex-direction: column;
+    background: rgba(237, 248, 249, 1);
+}
+
+.Top1 {
+    display: flex;
+    align-items: center;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 20px;
+    padding: 80px 20px;
+}
+
+.Top1 h1{
+    color: rgba(46, 80, 112, 1);
+    font-size: 64px;
+    font-weight: 900;
+}
+
+.Top1 p{
+    color: black;
+    font-size: 20px;
+    padding-left: 80px;
+}
+
+.Top2 {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1280px;
+    gap: 20px;
+    padding: 80px 20px;
+}
+
+.Top2 h1{
+    color: rgba(46, 80, 112, 1);
+    width: 120%;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.Top2 p{
+	width: 80%;
+    font-size: 20px;
+    color: black;
+}
+
+/* jadwal */
+#jadwal {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 10px;
+	padding: 80px 40px;
+}
+
+#jadwal h3{
+	color: rgba(46, 80, 112, 1);
+	font-size: 40px;
+}
+
+.dokter {
+	display: flex;
+	padding-top: 40px;
+}
+
+.dokter h4 {
+	color: rgba(46, 80, 112, 1);
+	font-size: 32px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgba(198, 234, 227, 1);
+}
+
+.d1 {
+	display: flex;
+	gap: 10px;
+	max-width: 610px;
+	width: 100%;
+}
+.d2 {
+	display: flex;
+	gap: 10px;
+	max-width: 610px;
+	width: 100%;
+}
+
+.b1 {
+	display: flex;
+	flex-direction: column;
+	padding-top: 20px;
+	color: rgba(46, 80, 112, 1);
+	gap: 10px;
+	font-size: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgba(198, 234, 227, 1);
+	max-width: 610px;
+	width: 100%;
+}
+
+.text {
+	display: flex;
+	flex-direction: column;
+}
+
+.t1 {
+	max-width: 610px;
+	width: 100%;
+}
+
+/* kucing Gaming */
+#kucingGaming {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1280px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 80px;
+	padding: 0px 0px 0px 40px;
+	background-color: rgba(95, 183, 167, 1);
+	border-radius: 16px;
+}
+
+.text1 a{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	text-decoration: underline;
+	color: white;
+	font-size: 56px;
+	font-weight: 600;
+}
+
+.text1 p{
+	font-size: 32px;
+	color: white;
+	font-weight: 400;
+}
+
+/* footer */
+footer {
+	background-image: url(images/paw-pattern\ dark.svg);
+	background-color: rgba(46, 80, 112, 1);
+	padding: 40px;
+}
+
+.footerAtas {
+	display: flex;
+	gap: 32px;
+	border-bottom: 1px solid rgba(198, 234, 227, 1);
+	padding-bottom: 40px;
+}
+
+.footerBawah p{
+	padding-bottom: 30px;
+}
+
+.footerBawah {
+	font-size: 14px;
+	color: white;
+	padding-top: 40px;
+}
+
+.mainLink {
+	display: flex;
+	flex-direction: column;
+	max-width: 206px;
+	max-height: 199px;
+	gap: 13px;
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	max-width: 257px;
+	max-height: 216px;
+	gap: 13px;
+}
+
+.follow {
+	display: flex;
+	flex-direction: column;
+	gap: 13px;
+}
+
+.sosmed{
+	display: flex;
+	gap: 13px;
+}
+
+footer h6{
+	font-size: 18px;
+	color: rgba(198, 234, 227, 1);
+
+}
+
+footer a{
+	font-size: 20px;
+	color: white;
+}
+
+/* Media Query for screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+    .navSide {
+		display: none;
+    }
+
+    .Top1,
+    .Top2 {
+        flex-direction: column;
+		max-width: 100%;
+    }
+
+    .Top1 h1,
+    .Top2 h1 {
+        font-size: 40px;
+		max-width: 100%;
+		padding-left: 0px;
+    }
+
+	.dokter img{
+		max-width: 100%;
+	}
+
+    .dokter,
+    .d1,
+    .d2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .d1,
+    .d2 {
+        max-width: 100%;
+    }
+
+    .b1,
+    .text {
+        max-width: 100%;
+    }
+
+    .text1 {
+        padding: 20px;
+    }
+
+    .text1 p {
+        font-size: 24px;
+    }
+
+    .text1 a {
+        font-size: 32px;
+    }
+
+	#kucingGaming{
+		flex-direction: column;
+		margin-left: 0px;
+		margin-right: 0px;
+		max-width: 100%;
+	}
+
+    .catGamer img{
+		max-width: 100%;
+    }
+
+    .footerAtas {
+        flex-direction: column;
+    }
+}
+
+/* Media Query for screens smaller than 400px */
+@media only screen and (max-width: 400px) {
+    .Top1 h1,
+    .Top2 h1 {
+        font-size: 32px;
+    }
+
+    .Top1 p,
+    .Top2 p {
+        font-size: 18px;
+    }
+
+    .dokter h4 {
+        font-size: 24px;
+    }
+
+    .b1 p {
+        font-size: 16px;
+    }
+
+    footer h6 {
+        font-size: 16px;
+    }
+
+    footer a {
+        font-size: 18px;
+    }
+
+    .footerBawah p {
+        font-size: 12px;
+    }
+}

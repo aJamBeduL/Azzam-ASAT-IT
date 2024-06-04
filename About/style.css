@@ -1,0 +1,314 @@
+/* reset */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* body */
+body {
+	font-family: "Barlow", sans-serif;
+}
+
+a {
+	list-style-type: none;
+	text-decoration: none;
+}
+
+/* nav */
+nav {
+	box-shadow: 0px 6px 18px 0px rgba(0, 0, 0, 0.05);
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 40px;
+	border-radius: 100px;
+	z-index: 1000;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	left: 20px;
+	background-color: white;
+	background-image: url(images/Paw\ Pattern\ light.svg);
+}
+
+.navSide {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 32px;
+	list-style: none;
+}
+
+.navSide li {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.navSide a {
+	color: rgba(46, 81, 113, 1);
+	font-size: 18px;
+	font-weight: 600;
+}
+
+/* banner */
+
+/* about */
+#about {
+	display: flex;
+	flex-direction: column;
+	background: rgba(237, 248, 249, 1);
+}
+
+.Top {
+	display: flex;
+	align-items: center;  
+	max-width: 1280px;     
+	width: 100%;
+	margin: 0 auto;
+	gap: 20px;
+	padding: 80px 20px;
+}
+
+.Top h1 {
+	color: rgba(46, 80, 112, 1);
+	font-size: 64px;
+	font-weight: 900;
+}
+
+.Top p {
+	color: rgba(46, 80, 112, 1);
+	font-size: 20px;
+	padding-left: 80px;
+}
+
+.dokter {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	max-width: 1280px;
+	width: 100%;
+	gap: 80px;
+	padding-bottom: 40px;
+}
+
+.dokter1 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.dokter2 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.dokter h2 {
+	color: rgba(46, 80, 112, 1);
+	font-size: 40px;
+	padding: 40px 0px;
+}
+
+.dokter p {
+	padding: 0 18px;
+	color: black;
+	font-size: 20px;
+}
+
+/* team */
+#team {
+	background-color: rgba(255, 255, 255, 1);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 40px;
+	max-width: 1820px;
+	width: 100%;
+}
+
+#team h2 {
+	color: rgba(46, 80, 112, 1);
+	font-size: 40px;
+}
+#team p {
+	color: rgba(46, 80, 112, 1);
+	font-size: 20px;
+	font-weight: 400;
+}
+#team h4 {
+	color: rgba(46, 80, 112, 1);
+	font-size: 32px;
+}
+
+.profile {
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 0px 40px 0px;
+}
+
+.p {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	margin-bottom: 20px;
+}
+
+/* footer */
+footer {
+	background-image: url(images/paw-pattern\ dark.svg);
+	background-color: rgba(46, 80, 112, 1);
+	padding: 40px;
+}
+
+.footerAtas {
+	display: flex;
+	gap: 32px;
+	border-bottom: 1px solid rgba(198, 234, 227, 1);
+	padding-bottom: 40px;
+}
+
+.footerBawah {
+	font-size: 14px;
+	color: white;
+	padding-top: 40px;
+}
+
+.footerBawah p {
+	padding-bottom: 30px;
+}
+
+.mainLink {
+	display: flex;
+	flex-direction: column;
+	max-width: 206px;
+	max-height: 199px;
+	gap: 13px;
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	max-width: 257px;
+	max-height: 216px;
+	gap: 13px;
+}
+
+.follow {
+	display: flex;
+	flex-direction: column;
+	gap: 13px;
+}
+
+.sosmed {
+	display: flex;
+	gap: 13px;
+}
+
+footer h6 {
+	font-size: 18px;
+	color: rgba(198, 234, 227, 1);
+}
+
+footer a {
+	font-size: 20px;
+	color: white;
+}
+
+/* Media Query for screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+    .navSide {
+		display: none;
+    }
+
+    .Top {
+        flex-direction: column;
+    }
+
+    .Top h1 {
+        font-size: 40px;
+    }
+
+    .Top p {
+        padding-left: 0;
+    }
+
+	.dokter h2{
+		padding-left: 20px;
+	}
+    .dokter,
+    .dokter1{
+        flex-direction: column;
+    }
+	.dokter2{
+		flex-direction: column-reverse;
+	}
+	.dokter1 img{
+		max-width: 100%;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.dokter2 img{
+		max-width: 100%;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+    .dokter p {
+        padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 32px;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+    }
+	.p img{
+		max-width: 100%;
+	}
+
+    .footerAtas {
+        flex-direction: column;
+    }
+}
+
+/* Media Query for screens smaller than 400px */
+@media only screen and (max-width: 400px) {
+    .Top h1 {
+        font-size: 32px;
+    }
+
+    .dokter h2 {
+        font-size: 32px;
+    }
+
+    .dokter p {
+        font-size: 16px;
+    }
+
+    .team h2 {
+        font-size: 32px;
+    }
+
+    .profile {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .p {
+        margin-bottom: 0;
+    }
+
+    footer h6 {
+        font-size: 16px;
+    }
+
+    footer a {
+        font-size: 18px;
+    }
+
+    .footerBawah p {
+        font-size: 12px;
+    }
+}
