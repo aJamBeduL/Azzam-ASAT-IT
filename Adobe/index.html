@@ -17,21 +17,28 @@
 				<img src="images/Logo JoyCat Dark.svg" alt="" />
 			</a>
 			<ul class="navSide">
-				<li>
-					<a href="/About/">Tentang Kami</a>
-				</li>
-				<li>
-					<a href="/Clinic/">Klinik</a>
-				</li>
-				<li>
-					<a href="/Daycare and Grooming/">Daycare & Grooming</a>
-				</li>
-				<li>
-					<img src="images/paw.svg" alt="" />
-					<a href="/Adobe/">Adopsi</a>
-				</li>
+				<li><a href="/About/">Tentang Kami</a></li>
+				<li><a href="/Clinic/">Klinik</a></li>
+				<li><a href="/Daycare and Grooming/">Daycare & Grooming</a></li>
+				<li><img src="images/paw.svg" alt=""><a href="/Adobe/">Adopsi</a></li>
 			</ul>
+			<!-- Hamburger Icon -->
+			<div class="menu-toggle">
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+			</div>
 		</nav>
+		<!-- Hidden Menu -->
+		<div class="menuBar">
+			<ul class="navSide">
+				<li><a href="/About/">Tentang Kami</a></li>
+				<li><a href="/Clinic/">Klinik</a></li>
+				<li><a href="/Daycare and Grooming/">Daycare & Grooming</a></li>
+				<li><a href="/Adobe/">Adopsi</a></li>
+				<li><img src="images/Group (1).svg" alt="" /><a href="https://api.whatsapp.com/send/?phone=0812345678910&text&type=phone_number&app_absent=0">0812-3456-78910</a></li>
+			</ul>
+		</div>
 
 		<section id="banner">
 			<img src="images/hero.svg" style="width: 100%" alt="" />
@@ -64,7 +71,7 @@
 						</div>
 					</div>
 					<button>
-						<a href="">
+						<a href="https://api.whatsapp.com/send/?phone=0812345678910&text&type=phone_number&app_absent=0">
 							<img src="images/_WhatsApp.svg" alt="" />
 							<p>Adopsi</p>
 						</a>
@@ -90,7 +97,7 @@
 						</div>
 					</div>
 					<button>
-						<a href="">
+						<a href="https://api.whatsapp.com/send/?phone=0812345678910&text&type=phone_number&app_absent=0">
 							<img src="images/_WhatsApp.svg" alt="" />
 							<p>Adopsi</p>
 						</a>
@@ -116,7 +123,7 @@
 						</div>
 					</div>
 					<button>
-						<a href="">
+						<a href="https://api.whatsapp.com/send/?phone=0812345678910&text&type=phone_number&app_absent=0">
 							<img src="images/_WhatsApp.svg" alt="" />
 							<p>Adopsi</p>
 						</a>
@@ -142,7 +149,7 @@
 						</div>
 					</div>
 					<button>
-						<a href="">
+						<a href="https://api.whatsapp.com/send/?phone=0812345678910&text&type=phone_number&app_absent=0">
 							<img src="images/_WhatsApp.svg" alt="" />
 							<p>Adopsi</p>
 						</a>
@@ -170,7 +177,7 @@
 						</div>
 					</div>
 					<button>
-						<a href="">
+						<a href="https://api.whatsapp.com/send/?phone=0812345678910&text&type=phone_number&app_absent=0">
 							<img src="images/_WhatsApp.svg" alt="" />
 							<p>Adopsi</p>
 						</a>
@@ -257,6 +264,48 @@
 			submitBtn.addEventListener("click", () => {
 				form.classList.add("hidden");
 				arigato.classList.remove("hidden");
+			});
+
+			document.querySelector(".menu-toggle").addEventListener("click", function () {
+				this.classList.toggle("change");
+				document.querySelector(".menu").classList.toggle("show");
+			});
+
+			// Sembunyikan menu ketika salah satu menu diklik
+			document.querySelectorAll(".menu ul li a").forEach((item) => {
+				item.addEventListener("click", () => {
+					document.querySelector(".menu").classList.remove("show");
+					document.querySelector(".menu-toggle").classList.remove("change");
+				});
+			});
+
+			// Tampilkan tombol hamburger pada layar kecil
+			window.addEventListener("resize", function () {
+				if (window.innerWidth <= 768) {
+					document.querySelector(".menu-toggle").style.display = "block";
+				} else {
+					document.querySelector(".menu-toggle").style.display = "none";
+				}
+			});
+
+			// tampilkan menubar pada layar kecil
+			document.addEventListener("DOMContentLoaded", function () {
+				const menuToggle = document.querySelector(".menu-toggle");
+				const navMenu = document.querySelector(".menuBar .navSide");
+
+				// Toggle the menu when the hamburger icon is clicked
+				menuToggle.addEventListener("click", function () {
+					navMenu.classList.toggle("active");
+					menuToggle.classList.toggle("active");
+				});
+
+				// Close the menu when a menu item is clicked
+				navMenu.querySelectorAll("a").forEach(function (item) {
+					item.addEventListener("click", function () {
+						navMenu.classList.remove("active");
+						menuToggle.classList.remove("active");
+					});
+				});
 			});
 		</script>
 	</body>
