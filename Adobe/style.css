@@ -336,6 +336,10 @@ footer a {
 	.menu-toggle {
         display: block;
     }
+
+    #hero .container img{
+        width: 100%;
+    }
     
     .navSide {
         display: none;
@@ -399,5 +403,9 @@ footer a {
 
     .footerBawah p {
         font-size: 12px;
+    }
+
+    #hero .container h1{
+        font-size: 40px;
     }
 }

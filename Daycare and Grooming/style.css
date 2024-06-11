@@ -443,3 +443,9 @@ footer a {
 		flex-direction: column;
 	}
 }
+
+@media screen and (max-width: 350px) {
+	.Top h1{
+		font-size: 40px;
+	}
+}
